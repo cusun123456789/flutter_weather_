@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:weatherapp/models/weather.dart';
+import 'package:flutter_weather_app/models/weather.dart';
 
 abstract class WeatherState extends Equatable {
   const WeatherState();

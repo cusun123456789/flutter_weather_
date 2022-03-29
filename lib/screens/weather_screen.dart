@@ -3,15 +3,15 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weatherapp/blocs/theme_bloc.dart';
-import 'package:weatherapp/blocs/weather_bloc.dart';
-import 'package:weatherapp/events/theme_event.dart';
-import 'package:weatherapp/events/weather_event.dart';
-import 'package:weatherapp/screens/city_search_screen.dart';
-import 'package:weatherapp/screens/settings_screen.dart';
-import 'package:weatherapp/screens/temperature_widget.dart';
-import 'package:weatherapp/states/theme_state.dart';
-import 'package:weatherapp/states/weather_state.dart';
+import 'package:flutter_weather_app/blocs/theme_bloc.dart';
+import 'package:flutter_weather_app/blocs/weather_bloc.dart';
+import 'package:flutter_weather_app/events/theme_event.dart';
+import 'package:flutter_weather_app/events/weather_event.dart';
+import 'package:flutter_weather_app/screens/city_search_screen.dart';
+import 'package:flutter_weather_app/screens/settings_screen.dart';
+import 'package:flutter_weather_app/screens/temperature_widget.dart';
+import 'package:flutter_weather_app/states/theme_state.dart';
+import 'package:flutter_weather_app/states/weather_state.dart';
 
 class WeatherScreen extends StatefulWidget {
   @override

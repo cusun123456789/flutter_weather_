@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
-import 'package:weatherapp/models/weather.dart';
+import 'package:flutter_weather_app/models/weather.dart';
 
 const baseUrl = 'https://www.metaweather.com';
 final locationUrl = (city) => '${baseUrl}/api/location/search/?query=${city}';
@@ -11,7 +11,7 @@ final weatherUrl = (locationId) => '${baseUrl}/api/location/${locationId}';
 class WeatherRepository {
   final http.Client httpClient;
   //constructor
-  WeatherRepository({@required this.httpClient}) : assert(httpClient != null);
+  WeatherRepository({@required this.httpClient}): assert(httpClient != null);
   Future<int> getLocationIdFromCity(String city) async {
     final response = await this.httpClient.get(locationUrl(city));
     if (response.statusCode == 200) {

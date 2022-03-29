@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weatherapp/blocs/settings_bloc.dart';
-import 'package:weatherapp/events/settings_event.dart';
-import 'package:weatherapp/states/settings_state.dart';
+import 'package:flutter_weather_app/blocs/settings_blocs.dart';
+import 'package:flutter_weather_app/events/setting_event.dart';
+import 'package:flutter_weather_app/states/settings_state.dart';
 
 class SettingsScreen extends StatelessWidget {
   @override

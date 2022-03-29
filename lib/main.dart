@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weatherapp/blocs/settings_bloc.dart';
-import 'package:weatherapp/blocs/theme_bloc.dart';
-import 'package:weatherapp/blocs/weather_bloc.dart';
-import 'package:weatherapp/blocs/weather_bloc_observer.dart';
-import 'package:weatherapp/repositories/weather_repository.dart';
+import 'package:flutter_weather_app/blocs/settings_blocs.dart';
+import 'package:flutter_weather_app/blocs/theme_bloc.dart';
+import 'package:flutter_weather_app/blocs/weather_bloc.dart';
+import 'package:flutter_weather_app/blocs/weather_bloc_observer.dart';
+import 'package:flutter_weather_app/repositories/weather_repository.dart';
 import 'package:http/http.dart' as http;
-import 'package:weatherapp/screens/weather_screen.dart';
-import 'package:weatherapp/states/theme_state.dart';
+import 'package:flutter_weather_app/screens/weather_screen.dart';
+import 'package:flutter_weather_app/states/theme_state.dart';
 
 void main() {
   Bloc.observer = WeatherBlocObserver();
