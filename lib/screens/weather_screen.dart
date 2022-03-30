@@ -30,7 +30,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Weather App using Flutter Bloc'),
+        title: Text('Weather App'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.settings),
@@ -49,7 +49,8 @@ class _WeatherScreenState extends State<WeatherScreen> {
               //Navigate to CitySearchScreen
               final typedCity = await Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => CitySearchScreen()),
+                MaterialPageRoute(
+                    builder: (context) => CitySearchScreen()),
               );
               if (typedCity != null) {
                 BlocProvider.of<WeatherBloc>(context)
@@ -89,10 +90,13 @@ class _WeatherScreenState extends State<WeatherScreen> {
                       children: <Widget>[
                         Column(
                           children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.symmetric(vertical: 2),
+                            ),
                             Text(
                               weather.location,
                               style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 25,
                                   fontWeight: FontWeight.bold,
                                   color: themeState.textColor),
                             ),
@@ -103,7 +107,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                               child: Text(
                                 'Updated: ${TimeOfDay.fromDateTime(weather.lastUpdated).format(context)}',
                                 style: TextStyle(
-                                    fontSize: 16, color: themeState.textColor),
+                                    fontSize: 20, color: themeState.textColor),
                               ),
                             ),
                             //show more here, put together inside a Widget
@@ -122,7 +126,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
           if (weatherState is WeatherStateFailure) {
             return Text(
               'Something went wrong',
-              style: TextStyle(color: Colors.redAccent, fontSize: 16),
+              style: TextStyle(color: Colors.redAccent, fontSize: 30)
             );
           }
           return Center(

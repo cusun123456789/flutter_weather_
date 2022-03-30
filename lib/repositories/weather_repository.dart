@@ -1,8 +1,8 @@
 import 'dart:convert';
-
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_weather_app/models/weather.dart';
+
 
 const baseUrl = 'https://www.metaweather.com';
 final locationUrl = (city) => '${baseUrl}/api/location/search/?query=${city}';
