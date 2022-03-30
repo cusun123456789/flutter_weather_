@@ -69,7 +69,7 @@ class TemperatureWidget extends StatelessWidget {
                             settingsState.temperatureUnit
                           )}',
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 22,
                           color: _themeState.textColor,
                         ),
                       ),
@@ -79,7 +79,7 @@ class TemperatureWidget extends StatelessWidget {
                               settingsState.temperatureUnit
                           )}',
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 22,
                           color: _themeState.textColor,
                         ),
                       ),
@@ -89,7 +89,7 @@ class TemperatureWidget extends StatelessWidget {
                               settingsState.temperatureUnit
                           )}',
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 22,
                           color: _themeState.textColor,
                         ),
                       ),
