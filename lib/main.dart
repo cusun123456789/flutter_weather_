@@ -36,6 +36,7 @@ class MyApp extends StatelessWidget {
       builder: (context, themeState) {
         return MaterialApp(
             title: 'Flutter Weather App',
+            debugShowCheckedModeBanner: false,
             home: BlocProvider(
               create: (context) => WeatherBloc(
                   weatherRepository: weatherRepository
